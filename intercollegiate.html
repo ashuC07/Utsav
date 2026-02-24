@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTSAV 2026 | Picture Abhi Baaki Hai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="logo.png" href="index.html" class="nav-logo" alt="Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="intercollegiate.html">Intercollegiate</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+    </ul>
+    
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav-right">
+        <img src="CLogo.png" href="index.html" class="nav-logo" alt="Logo">
+    </div>
+</nav>
+</header>
+<header class="hero">
+    <!-- keep characters -->
+    <div class="hero-content" style="transform: rotate(-1deg);">
+        <h1>INTERCOLLEGIATE <span class="highlight">CLASH</span></h1>
+        <p>Picture Abhi Baaki Hai Mere Dost!– Colleges Bring Your Team</p>
+        <p class="sub-hero">14–15 March 2026 | SGGSIE&T, Nanded</p>
+        
+        <div class="cta-buttons" style="margin: 40px 0;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhDZrPfpWGQUhe84p6Gjje__MLuQEuMUSqFKpW5QnNgc6wcw/viewform" 
+               class="btn primary" style="font-size: 1.1rem; padding: 20px 40px;">
+               REGISTER YOUR TEAM NOW!
+            </a>
+            <a href="#events" class="btn secondary">View Categories</a>
+            <a href="event.html" class="btn secondary">Our Events</a>
+        </div>
+    </div>
+    <img src="char3.png" alt="Character left" class="cartoon-character char-left">
+    <img src="2.png" alt="Character right" class="cartoon-character char-right">
+</header>
+
+<!-- Quick stats bar -->
+<section class="stats-bar" style="background: var(--primary-color); color: white; padding: 40px; text-align: center;">
+    <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
+        <div><strong>₹1,50,000+*</strong><br>Prize Pool<br>(Terms and Conditions applied)</div><br><br><br>
+        <br><div><strong>14–15 March 2026</strong><br>Grand Finale</div>
+        <div><strong>4 Epic Categories</strong><br>Dance • Drama • Music • Face Painting</div>
+       <br> <div><strong>Open to All Colleges</strong><br>Team Size 8–15</div>
+    </div>
+</section>
+</header>
+
+    <section class="highlights" id="events">
+        <h2>HOUSEFULL EVENTS</h2>
+        <div class="card-grid">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhDZrPfpWGQUhe84p6Gjje__MLuQEuMUSqFKpW5QnNgc6wcw/viewform" class="card" style="--card-bg: url('white.png'); --card-text-color: #000000;">
+                <h3>Dance!</h3>
+                <p>Rhythm, energy, electrifying performance. </p>
+                <p>(15th March)</p>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhDZrPfpWGQUhe84p6Gjje__MLuQEuMUSqFKpW5QnNgc6wcw/viewform" class="card" style="--card-bg: url('white.png'); --card-text-color: #fff;">
+                <h3>Drama!</h3>
+                <p>Theatre, emotions, and powerful stage performance.</p>
+                <p>(14th March)</p>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhDZrPfpWGQUhe84p6Gjje__MLuQEuMUSqFKpW5QnNgc6wcw/viewform" class="card" style="--card-bg: url('white.png'); --card-text-color: #000000;">
+                <h3>Music!</h3>
+                <p>Melodies, beats, and soulful vibes.</p>
+                <p>(14th March)</p>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhDZrPfpWGQUhe84p6Gjje__MLuQEuMUSqFKpW5QnNgc6wcw/viewform" class="card" style="--card-bg: url('white.png'); --card-text-color: #ffffff;">
+                <h3>Face Painting!</h3>
+                <p>Colors, creativity, and artistic expression.</p>
+                <p>(15th March)</p>
+            </a>
+        </div>
+    </section>
+        <script>    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    });</script>
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="logo.png" alt="UTSAV Logo" class="footer-logo">
+            <h3>UTSAV 2026</h3>
+            <p>SGGSIE&T, Nanded</p>
+        </div>
+
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="intercollegiate.html">Intercollegiate</a>
+            <a href="event.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="team.html">Team</a>
+        </div>
+
+        <div class="footer-right">
+            <h4>Cultural Secretary</h4>
+            <a href="https://www.instagram.com/sushant_dohale">Sushant Dohale</a>
+            <p>📞 9130454011</p> 
+            <h4>PRC Mains</h4>
+            <a href="https://www.instagram.com/poonamk_54">Poonam Kamble</a>
+            <p>📞 9822286570</p>  
+            <h4>Contact</h4>
+            <p>📍 SGGSIE&T, Nanded</p>
+            <a href="mailto:utsav2k26sggs">📧 utsav@sggs.ac.in</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 UTSAV • Designed by <span><a href="https://www.instagram.com/ashu_91007">ASHUTOSH CHANDGUDE</a></span>
+    </div>
+</footer>
+
+</body>
+</html>
